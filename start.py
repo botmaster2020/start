@@ -7,7 +7,7 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart 
 
-bot = telebot.TeleBot('1117773565:AAF7XODluu38_cB3dwURYMFXIDDKSWSjlRE')
+bot = telebot.TeleBot('967141436:AAGD95tco2icFWTj086otcAFwMMzYw9fNYg')
 
 def send_email(addr_to, msg_subj, msg_text, files=''):
     addr_from = "a.alex.2000@mail.ru"                           # Отправитель
@@ -63,7 +63,7 @@ def reaction(call):
     if c == '1':
         with open('file.pdf', 'rb') as doc:
             bot.send_document(who, doc)
-        send_email('goncharuk.ea@gazprom-neft.ru', 'Отчёт', 'Start', files='file.pdf')
+        # send_email('goncharuk.ea@gazprom-neft.ru', 'Отчёт', 'Start', files='file.pdf')
     bot.answer_callback_query(call.id)
 
 
