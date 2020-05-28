@@ -70,7 +70,7 @@ def reaction(call):
 @bot.message_handler(commands=['start'])
 def start(message):
     who = message.chat.id
-    bot.send_message(who, 'Получите отчёт на почту goncharuk.ea@gazprom-neft.ru', reply_markup=key())
+    bot.send_message(who, 'Пример отчёта ОП', reply_markup=key())
 
 print('go')
 bot.polling(none_stop=True)
